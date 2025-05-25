@@ -12,7 +12,7 @@ async def on_ready():
 
 @bot.command()
 async def ciao(ctx):
-    await ctx.send(f'Ciao! Sono un bot {bot.user}!')
+    await ctx.send(f'Ciao! Sono il bot {bot.user}!')
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
@@ -30,4 +30,9 @@ async def somma_param(ctx, numero : int):
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
-bot.run("MTM3MTQ5NzkyNzgwMDkxODEyNg.GvlSy5.MJRFagUFTrQoSmd2HDt-pIrel6xc99JyBAh_c")
+
+
+@bot.command()
+async def sot(ctx, left: int, right: int):
+    await ctx.send(left - right)
+bot.run("MTM3MTQ5NzkyNzgwMDkxODEyNg.GvlSy5.MJRFagUFTrQoSmd2HDt-pIrel6xc99JyBAh_cA")
